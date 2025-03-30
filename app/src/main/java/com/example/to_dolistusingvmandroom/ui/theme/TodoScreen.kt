@@ -59,7 +59,7 @@ fun TodoScreen(viewModel: TodoViewModel = viewModel()) {
             items(todoList) { item -> // ✅ Correct way to display a list in Jetpack Compose
                 TodoItem(
                     item = item,
-                    onToggle = viewModel::toogleTodo,
+                    onToggle = viewModel::toggleTodo,
                     onDelete = viewModel::removeTodo
                 )
             }
