@@ -13,8 +13,7 @@ val todoList: StateFlow<List<TodoItem>> = _todoList
 
     fun addTodo(text: String){
         if(text.isNotBlank()){
-            _todoList = _todoList.value + TodoItem(nextId++, text)
-        }
+            _todoList.value = _todoList.value + TodoItem(nextId++, text)        }
     }
 
 
